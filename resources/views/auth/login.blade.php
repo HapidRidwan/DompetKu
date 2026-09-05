@@ -1,27 +1,27 @@
 <x-guest-layout>
-    <div class="min-h-screen bg-[#f6f8fb] lg:bg-white">
-        <div class="min-h-screen grid lg:grid-cols-2">
+    <div class="min-h-screen bg-[#f6f8fb] lg:h-screen lg:overflow-hidden lg:bg-white">
+        <div class="min-h-screen grid lg:h-full lg:min-h-0 lg:grid-cols-2">
 
             {{-- LEFT SIDE - DESKTOP --}}
-            <div class="hidden lg:flex bg-[#345b7d] text-white px-24 py-20 flex-col justify-center">
+            <div class="hidden lg:flex bg-[#345b7d] text-white px-24 py-12 flex-col items-center justify-center text-center">
                 <div class="max-w-md">
 
                     {{-- Logo --}}
-                    <div class="mb-14 flex justify-center">
+                    <div class="mb-8 flex justify-center">
                         <div class="w-12 h-12 bg-white flex items-center justify-center shadow-sm">
                             <x-authentication-card-logo />
                         </div>
                     </div>
 
                     {{-- Title --}}
-                    <h1 class="text-[32px] leading-[1.2] font-bold font-serif mb-7">
+                    <h1 class="mb-5 text-[32px] leading-[1.2] font-bold font-serif">
                         Kuasai Keuangan Anda
                         <br>
                         dengan DompetKu
                     </h1>
 
                     {{-- Description --}}
-                    <p class="text-[16px] leading-6 text-[#8ca7c0] max-w-lg">
+                    <p class="mx-auto max-w-lg text-[16px] leading-6 text-[#8ca7c0]">
                         Kelola pengeluaran, buat anggaran, dan capai tujuan finansial Anda
                         dengan platform yang aman, sederhana, dan mudah digunakan.
                     </p>
@@ -29,14 +29,12 @@
             </div>
 
             {{-- RIGHT SIDE --}}
-            <div class="flex justify-center px-5 sm:px-8 lg:px-16">
+            <div class="flex items-center justify-center px-5 py-8 sm:px-8 lg:px-16 lg:py-0">
                 <div class="w-full max-w-[448px]">
 
                     {{-- DESKTOP TOP SPACING --}}
-                    <div class="hidden lg:block h-[205px]"></div>
-
                     {{-- MOBILE LOGO --}}
-                    <div class="lg:hidden flex justify-center pt-[216px] mb-5">
+                    <div class="lg:hidden flex justify-center pt-10 mb-5">
                         <div class="w-[78px] h-[78px] rounded-2xl bg-white shadow-[0_8px_25px_rgba(0,0,0,0.05)] flex items-center justify-center">
                             <div class="w-12 h-12">
                                 <x-authentication-card-logo />
@@ -45,7 +43,7 @@
                     </div>
 
                     {{-- HEADING --}}
-                    <div class="mb-8 lg:mb-8 text-center lg:text-left">
+                    <div class="mb-6 text-center lg:mb-5">
 
                         <h2 class="
                             text-[#002b50]
@@ -58,7 +56,7 @@
                             Selamat Datang Kembali
                         </h2>
 
-                        <p class="mt-2 text-[#4b4b4b] text-[15px] lg:text-[14px] text-center lg:text-left">
+                        <p class="mt-2 text-[#4b4b4b] text-[15px] lg:text-[14px] text-center">
                             Masuk untuk mengelola keuangan Anda dengan aman dan mudah.
                         </p>
 
@@ -247,7 +245,7 @@
                         </div>
 
                         {{-- REMEMBER / FORGOT --}}
-                        <div class="flex justify-between items-center mb-10 lg:mb-7">
+                        <div class="flex justify-between items-center mb-7 lg:mb-5">
 
                             <label
                                 for="remember_me"
@@ -334,7 +332,7 @@
                         </button>
 
                         {{-- DIVIDER --}}
-                        <div class="flex items-center my-8 lg:my-14">
+                        <div class="flex items-center my-6 lg:my-5">
 
                             <div class="flex-1 border-t border-[#d8dce2]"></div>
 
@@ -405,7 +403,7 @@
                         </a>
 
                         {{-- REGISTER --}}
-                        <div class="text-center mt-12 lg:mt-12 text-[14px]">
+                        <div class="text-center mt-8 lg:mt-6 text-[14px]">
 
                             <span class="text-[#4f4f4f]">
                                 Belum punya akun?
